@@ -1,0 +1,28 @@
+package com.example.demo.cmm.util;
+
+public class DummyGenerator {
+	
+	public String makeUserId() {
+		return "";
+	}
+	
+	public String makeUsername() {
+		return "";
+	}
+	
+	public String makeEmail() {
+		return "";
+	}
+	
+	public String makeBirthday() {
+		return "";
+	}
+	
+	public String makeGender() {
+		return "";
+	}
+	
+	public String makeRegdate() {
+		return "";
+	}
+}

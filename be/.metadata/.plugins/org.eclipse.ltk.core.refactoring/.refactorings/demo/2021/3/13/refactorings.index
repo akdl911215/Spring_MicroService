@@ -26,3 +26,8 @@
 1616384037966	Rename package 'domain'
 1616384041772	Rename package 'repository'
 1616384045106	Rename package 'service'
+1616394471954	Delete elements
+1616394585755	Delete element
+1616394600687	Rename package 'com.example.demo.util'
+1616394650885	Delete element
+1616397494072	Rename type 'CommonController'

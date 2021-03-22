@@ -1,5 +1,5 @@
-package com.example.demo.uss.service;
-
-public interface AdminService {
-
-}
+//package com.example.demo.uss.service;
+//
+//public interface AdminService {
+//
+//}

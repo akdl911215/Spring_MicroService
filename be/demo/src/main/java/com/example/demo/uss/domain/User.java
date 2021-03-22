@@ -13,16 +13,27 @@ public class User {
 	@Id
 	@GeneratedValue
 	
-	@Column(name = "user_id")
-	private String userId;
+	@Column(name = "name")
+	private String name;
 	
-	@Column(name = "user_pw")
-	private long userPw;
+	@Column(name = "password")
+	private String password;
+	
+	@Column(name = "user_no")
+	private long userNo;
+	
+	@Column(name = "username")
+	private String username;
 	
 	@Column(name = "email")
 	private String email;
 	
-	@Column(name = "phone_number")
-	private long phoneNumber;
+	@Column(name = "gender")
+	private String gender;
+	
+	@Column(name = "birthday")
+	private String birthday;
 
+	@Column(name = "regdate")
+	private String regdate;
 }
