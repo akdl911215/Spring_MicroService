@@ -6,10 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import lombok.Builder;
-import lombok.NoArgsConstructor;
-
-@Entity @NoArgsConstructor
+@Entity
 @Table(name = "users")
 public class User {
 	
@@ -38,20 +35,6 @@ public class User {
 	private String birthday;
 
 	@Column(name = "regdate")
-	private String regdate;
-
-	@Builder
-	public User(String name, String password, String username, String email, String gender, String birthday,
-			String regdate) {
-		super();
-		this.name = name;
-		this.password = password;
-		this.username = username;
-		this.email = email;
-		this.gender = gender;
-		this.birthday = birthday;
-		this.regdate = regdate;
-	}	
-	
+	private String regdate;	
 	
 }

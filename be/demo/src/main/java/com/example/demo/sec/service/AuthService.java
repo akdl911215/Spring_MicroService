@@ -1,5 +1,5 @@
 package com.example.demo.sec.service;
 
-public class AuthService {
-
+public interface AuthService {
+	public int insertMany();
 }
