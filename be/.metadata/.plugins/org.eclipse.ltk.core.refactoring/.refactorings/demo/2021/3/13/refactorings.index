@@ -31,3 +31,10 @@
 1616394600687	Rename package 'com.example.demo.util'
 1616394650885	Delete element
 1616397494072	Rename type 'CommonController'
+1616467585347	Extract method 'myCalendar'
+1616470408716	Delete element
+1616470410210	Delete element
+1616470532717	Delete element
+1616470534025	Delete element
+1616470589395	Delete element
+1616470590526	Delete element

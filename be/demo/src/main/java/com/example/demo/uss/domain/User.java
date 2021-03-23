@@ -35,5 +35,6 @@ public class User {
 	private String birthday;
 
 	@Column(name = "regdate")
-	private String regdate;
+	private String regdate;	
+	
 }

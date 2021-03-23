@@ -1,0 +1,38 @@
+package com.example.demo;
+
+import static com.example.demo.cmm.util.Proxy.rangMonthRandom;
+import static com.example.demo.cmm.util.Proxy.rangYearRandom;
+import static com.example.demo.cmm.util.Proxy.rangeRandom;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class DemoApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(DemoApplication.class, args);
+		
+		int date = rangeRandom.apply(1, 30);
+		int date2 = rangeRandom.apply(1, 31);
+		int date3 = rangeRandom.apply(1, 28);
+		int date4 = rangeRandom.apply(1, 29);
+
+		int yearDate = rangYearRandom.apply(200);
+		
+		int monthDate = rangMonthRandom.apply(12);
+		
+		if ((yearDate % 4 == 0 && yearDate % 100 != 0) || yearDate % 400 == 0) {
+			if(monthDate == 2 && date2 == 29) {
+				System.out.println(yearDate + "년생(윤년) " + monthDate + "월 " + date2 + "일");
+			} else if (monthDate == 2 && date2 == 28) {
+				System.out.println(yearDate + "년생(평년) " + monthDate + "월 " + date2 + "일");
+			} else if (monthDate == 2 || monthDate == 4 || monthDate == 6 || monthDate == 9 || monthDate == 11 ){
+				System.out.println(yearDate + "년생(평년)" + monthDate + "월 " + date2 + "일");
+			} else {
+				System.out.println(yearDate + "년생(평년)" + monthDate + "월 " + date + "일");
+			}
+		}
+	}
+
+}
